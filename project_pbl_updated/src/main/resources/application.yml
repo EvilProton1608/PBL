@@ -1,0 +1,15 @@
+server:
+  port: 5505 # You can change this if port 8080 is busy
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/voter
+    username: root
+    password: ""
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  thymeleaf:
+    cache: false
