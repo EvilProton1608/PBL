@@ -1,0 +1,15 @@
+server:
+  port: 5505 # Keep your preferred port
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/voter
+    username: root
+    password: "" # Consider using environment variables for production
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update # Good for development
+    show-sql: true # Helpful for debugging
+    
+# REMOVE ALL thymeleaf configurations
