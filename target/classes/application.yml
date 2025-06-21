@@ -1,0 +1,24 @@
+server:
+  port: 5505
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/voter
+    username: root
+    password: "" # Use environment variables in production
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+
+  twilio:
+    account:
+      sid: AC90bb15d1fc0428aa1036bdffef2e41aa    # Your main Twilio account SID (starts with "AC...")
+    auth:
+      token: dc35eb4f9ea63243be83c026ff811cbd    # Your Twilio auth token
+    verify:
+      service-sid: VA16cad214c0054614af544ea0a0c0a89a  # Your Verify Service SID (starts with "VA...")
